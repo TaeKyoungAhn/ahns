@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*============ Google Fonts ============*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+    --first-color: hsl(205, 86%, 17%);
+    --title-color: hsl(205, 86%, 17%);
+    --text-color: hsl(205, 86%, 17%);
+    --body-color: hsl(0, 0%, 98%);
+    --container-color: hsl(0, 0%, 100%);
+    --container-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --scrollbar-bg: hsl(0, 0%, 98%);
+    --scrollbar-width: 10px;
+    --scrollbar-track: hsl(0, 0%, 98%);
+
+    --body-font : 'Rubik', sans-serif;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-semibold: 600;
+
+    --shadow : 0 5px 20px rgba(69, 67, 96 / 10%);
 }
