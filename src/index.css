@@ -26,4 +26,124 @@
     --font-semibold: 600;
 
     --shadow : 0 5px 20px rgba(69, 67, 96 / 10%);
+
+    --border-radius: 0.5rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    :root {
+        --h1-font-size: 1.75rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    
+    }
+}
+
+
+/*Base CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+body,button,input,textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+h1,h2,h3 {
+    color: var(--title-color);
+    margin: 1rem 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}  
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 1080px;
+    padding: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+}
+
+.section{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+}
+
+.section__title::before{
+    content: "";
+    left: -0.865rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    position : absolute;
+    background-color: var(--first-color); /*향후 추가 */
+}
+
+.button {
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0,0,0/0%);
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+}
+
+@keyframes button-push {
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.button:hover{
+    animation: button-push 0.3s linear 1;
 }
