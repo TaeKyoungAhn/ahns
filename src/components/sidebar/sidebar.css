@@ -32,3 +32,11 @@
     transform: rotate(-180deg); /*새로 */
     writing-mode: vertical-rl;
 }
+
+.nav__logo {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+}
