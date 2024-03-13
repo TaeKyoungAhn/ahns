@@ -1,6 +1,8 @@
 import React from 'react';
 import './home.css';
 import IM from '../../assets/photo1.svg';
+import HeaderSocials from './HeaderSocials';
+import ScrollDown from './ScrollDown';
 
 
 const Home = () => {
@@ -10,6 +12,10 @@ const Home = () => {
                 <img src={IM} alt="" className="home__img" />
                 <h1 className="home__name">TaeKyoung Ahn</h1>
                 <span class="home__education">Stay Hungry, Stay Foolish</span>
+                <HeaderSocials/>
+
+                <a href="#Contact" className="button">Hire Me</a>
+                <ScrollDown/>
             </div>
         </section>
     );
