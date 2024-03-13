@@ -115,13 +115,13 @@ img{
 }
 
 .section__title::before{
-    content: "";
+    content: '';
     background: url(./assets/dots-bg.svg);
-    left: -0.865rem;
-    width: 2.25rem;
     height: 2.25rem;
+    width: 2.25rem;
     position : absolute;
-    background-color: var(--first-color); /*향후 추가 */
+    left: -0.875rem;
+    top: -0.875rem;
 }
 
 .btn {

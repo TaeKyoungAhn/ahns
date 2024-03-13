@@ -19,7 +19,28 @@ const About = () => {
                         </p>
                         <a href="taekyoung.site" className="btn" target="__blank">Download</a>
                         </div>
+
+                    <div className="about__skills grid">
+                        <div className="skills__data">
+                            <div className="skills__title"></div>
+                            <h3 className="skills__name"></h3>
+                            <span className="skills__number"></span>
+                        </div>
+                        <div className="skills__bar">
+                            <span className="skills__percentage"></span>
+                        </div>
+                    
+
+                        <div className="skills__data">
+                            <div className="skills__title"></div>
+                            <h3 className="skills__name"></h3>
+                            <span className="skills__number"></span>
+                        </div>
+                        <div className="skills__bar">
+                            <span className="skills__percentage"></span>
+                        </div>
                     </div> 
+                </div>
             </div>
         </section>
     )

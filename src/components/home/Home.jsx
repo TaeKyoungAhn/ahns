@@ -7,17 +7,19 @@ import Shapes from './Shapes';
 
 const Home = () => {
     return (
+        
         <section className="home container" id="home">
+              
             <div className="intro">
                 <img src={IM} alt="" className="home__img" />
                 <h1 className="home__name">TaeKyoung Ahn</h1>
-                <span class="home__education">Stay Hungry, Stay Foolish</span>
+                <span className="home__education">Stay Hungry, Stay Foolish</span>
                 <HeaderSocials/>
 
                 <a href="#Contact" className="btn">Hire Me</a>
                 <ScrollDown/>
             </div>
-            <Shapes/>
+            <Shapes/>  
         </section>
     );
 }

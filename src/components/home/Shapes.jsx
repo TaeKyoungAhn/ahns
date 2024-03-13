@@ -162,5 +162,4 @@ const Shapes = () => {
         </div>
     )
 }
-
 export default Shapes;
