@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo.png';
 
 const Sidebar = () => {
     return (
-        <aside class='aside'>
+        <aside className='aside'>
         <a href='#Home' className='nav__logo'>
             <img src={Logo} alt="" />
         </a>
