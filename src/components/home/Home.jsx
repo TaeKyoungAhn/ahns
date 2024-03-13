@@ -14,7 +14,7 @@ const Home = () => {
                 <span class="home__education">Stay Hungry, Stay Foolish</span>
                 <HeaderSocials/>
 
-                <a href="#Contact" className="button">Hire Me</a>
+                <a href="#Contact" className="btn">Hire Me</a>
                 <ScrollDown/>
             </div>
             <Shapes/>

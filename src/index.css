@@ -123,7 +123,7 @@ img{
     background-color: var(--first-color); /*향후 추가 */
 }
 
-.button {
+.btn {
     padding: 0.75rem 2rem;
     line-height: 1;
     border-radius: 1.875rem;
@@ -135,7 +135,7 @@ img{
     font-weight: var(--font-bold);
 }
 
-@keyframes button-push {
+@keyframes btn-push {
     50%{
         transform: scale(0.8);
     }
@@ -144,6 +144,6 @@ img{
     }
 }
 
-.button:hover{
-    animation: button-push 0.3s linear 1;
+.btn:hover{
+    animation: btn-push 0.3s linear 1;
 }
