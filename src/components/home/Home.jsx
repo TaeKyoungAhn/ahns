@@ -3,7 +3,7 @@ import './home.css';
 import IM from '../../assets/photo1.svg';
 import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
-
+import Shapes from './Shapes';
 
 const Home = () => {
     return (
@@ -17,6 +17,7 @@ const Home = () => {
                 <a href="#Contact" className="button">Hire Me</a>
                 <ScrollDown/>
             </div>
+            <Shapes/>
         </section>
     );
 }
