@@ -47,8 +47,14 @@
     text-decoration-line: none;
 }
 
+
 .home__scroll-name {
+    color: darkblue;
     font-size: var(--small-font-size);
+}
+
+.home__scroll-name:hover {
+    color: hsl(43, 100%, 68%);
 }
 
 .mouse {
