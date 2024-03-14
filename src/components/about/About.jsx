@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import image from "../../assets/avatar-2.svg";
+import AboutBox from "./AboutBox";
 
 const About = () => {
     return (
@@ -18,30 +19,44 @@ const About = () => {
                             I am always looking for new opportunities to learn and grow as a developer.
                         </p>
                         <a href="taekyoung.site" className="btn" target="__blank">Download</a>
-                        </div>
+                    </div>
 
                     <div className="about__skills grid">
                         <div className="skills__data">
-                            <div className="skills__title"></div>
-                            <h3 className="skills__name"></h3>
-                            <span className="skills__number"></span>
+                            <div className="skills__titles">
+                                <h3 className="skills___name">Unity 3D</h3>
+                                <span className="skills__number">70%</span>
+                            </div>
+
+                            <div className="skills__bar">
+                                <span className="skills__percentage unity"></span>
+                            </div>
                         </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage"></span>
-                        </div>
-                    
 
                         <div className="skills__data">
-                            <div className="skills__title"></div>
-                            <h3 className="skills__name"></h3>
-                            <span className="skills__number"></span>
+                            <div className="skills__titles">
+                                <h3 className="skills___name">React JS</h3>
+                                <span className="skills__number">60%</span>
+                            </div>
+                            <div className="skills__bar">
+                                <span className="skills__percentage react"></span>
+                            </div>
                         </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage"></span>
-                        </div>
+
+                        <div className="skills__data">
+                            <div className="skills__titles">
+                                <h3 className="skills___name">Python</h3>
+                                <span className="skills__number">20%</span>
+                            </div>
+                            <div className="skills__bar">
+                                <span className="skills__percentage python"></span>
+                            </div>
+                       </div>
                     </div> 
                 </div>
             </div>
+
+            <AboutBox/>
         </section>
     )
 }

@@ -13,7 +13,7 @@ const HeaderSocials = () => {
             </a>
 
             <a href="https://www.notion.so/Unity-3D-Programmer-18d7192786f245a0935767a6d5005e80" className="home__social-link" target="__blink">
-                <i class="fa-solid fa-image-portrait"></i>
+                <i class="fa-solid fa-n"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/%ED%83%9C%EA%B2%BD-%EC%95%88-53864a25a/" className="home__social-link" target="__blink">
