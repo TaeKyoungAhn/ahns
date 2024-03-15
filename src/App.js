@@ -7,6 +7,7 @@ import Resume from './components/resume/Resume.jsx';
 import Portfolio from './components/portfolio/Portfolio.jsx';
 import Blog from './components/blog/Blog.jsx';
 import Contact from './components/contact/Contact.jsx';
+import Skills from './components/skills/Skills.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services/>
       <Resume/>
       <Portfolio/>
+      <Skills/>
       <Blog/>
       <Contact/>
     </main>
