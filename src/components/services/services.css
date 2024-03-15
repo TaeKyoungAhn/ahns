@@ -46,3 +46,12 @@
     font-size: var(--small-font-size);
     color: #fff;
 }
+
+
+@media screen and (max-width: 1024px){
+    .services__container {
+       grid-template-columns: repeat(2, 330px);
+       justify-self: center;
+       row-gap: 1.875rem;
+    }
+}
