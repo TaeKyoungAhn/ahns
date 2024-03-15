@@ -16,7 +16,7 @@ const Home = () => {
                 <span className="home__education">Stay Hungry, Stay Foolish</span>
                 <HeaderSocials/>
 
-                <a href="#Contact" className="btn">Hire Me</a>
+                <a href="#contact" className="btn">Hire Me</a>
                 <ScrollDown/>
             </div>
             <Shapes/>  
