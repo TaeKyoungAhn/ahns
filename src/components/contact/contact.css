@@ -35,13 +35,16 @@
     color: var(--text-color);
     border: none;
     outline: none;
-    border-radius: var(--border-radius);
+    border-radius: 1.875rem;
     padding: 0.625rem 1.875rem;
     z-index: 1;
 }
 
 
-.contact__form-area textarea {
+.contact__form-area {
     height: 10.25rem;
+}
+
+.contact__form-area textarea {
     resize: none;
 }
