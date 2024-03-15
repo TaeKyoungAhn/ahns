@@ -19,6 +19,30 @@ const SkillData = [
       comment:
         "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
     },
+    {
+        id: 3,
+        image: Image3,
+        title: "John Doe",
+        subtitle: "Product designer at Dribble",
+        comment:
+          "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+      },
+      {
+        id: 4,
+        image: Image3,
+        title: "John Doe",
+        subtitle: "Product designer at Dribble",
+        comment:
+          "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+      },
+      {
+        id: 5,
+        image: Image3,
+        title: "John Doe",
+        subtitle: "Product designer at Dribble",
+        comment:
+          "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+      },
   ];
 
   export default SkillData;
