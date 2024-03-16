@@ -1,7 +1,20 @@
-import React from "react";
+/* eslint-disable no-undef */
+import React, {useRef} from "react";
 import "./contact.css";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        alert("Your message has been sent successfully");
+
+
+        emailjs.sendForm('service_7yvmdor', 'template_5z5z5z5', form.current, 'user_5z5z5z5')
+    }
+
     return (
         <section className="contact container section" id="contact">
             <h2 className="section__title">Get In Touch</h2>
@@ -29,7 +42,7 @@ const Contact = () => {
                     <div className="contact__form-div contact__form-area">
                         <textarea name="" id="" cols="30" rows="10" className="contact__form-input" placeholder="write your message"/>
                     </div>
-                <button className="btn">Send Message</button>        
+                <button className="btn" ref={form} onClick={sendEmail}>Send Message</button>        
             </form>
             </div>
             </section>
