@@ -1,6 +1,7 @@
 .work__filters {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 1.875rem;
     margin-bottom: 2.5rem;
 }
@@ -96,4 +97,32 @@
 .work__card:hover .work__category {
     transform: translateY(0);
     opacity: 1;
+}
+
+@media screen and (max-width: 1024px){
+    .work__container {
+       grid-template-columns: 450px;
+       justify-self: center;
+       row-gap: 1.875rem;
+    }
+
+    .work__filters {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .work__container {
+        grid-template-columns: 310px;
+    }
+
+    .work__filters{
+        row-gap: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .work__container {
+        grid-template-columns: 1fr;
+    }
 }

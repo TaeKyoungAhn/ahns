@@ -55,3 +55,16 @@
        row-gap: 1.875rem;
     }
 }
+
+@media screen and (max-width: 768px){
+    .services__container {
+        grid-template-columns: 310px;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .services__container {
+        grid-template-columns: 1fr;
+    }
+}

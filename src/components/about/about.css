@@ -129,6 +129,7 @@
 @media screen and (max-width: 768px){
     .about__container {
         grid-template-columns: 350px;
+        justify-content: center;
     }
 
     .about__data::before{
@@ -139,9 +140,31 @@
         grid-template-columns: 1fr;
         row-gap: 1.975rem;
     }
+
+    .about__img {
+        justify-self: center;
+    }
+
     .about__boxes {
         grid-template-columns: repeat(2, 150px);
         row-gap: 1.5rem;
         justify-self: center;
     }
 }
+
+@media screen and (max-width: 576px){
+    .about__container {
+        grid-template-columns: 320px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
