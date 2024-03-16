@@ -63,6 +63,7 @@
 @media screen and (max-width: 768px){
     .contact__container {
         grid-template-columns: 310px;
+        justify-self: center;
         row-gap: 1.875rem;
     }
 
@@ -71,7 +72,6 @@
     }
 
 }
-
 
 @media screen and (max-width: 350px){
     .contact__container {
