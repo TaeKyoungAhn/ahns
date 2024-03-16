@@ -68,14 +68,20 @@
 @media screen and (max-width: 768px){
     .resume__container {
         grid-template-columns: 310px;
+        justify-content: center;
     }
 }
 
 
 @media screen and (max-width: 350px){
+    .resume__container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
     .timeline__item {
         padding-left: 1.875rem;
         padding-bottom: 1.875rem;
+
     }
 
     .timeline__item::before{
