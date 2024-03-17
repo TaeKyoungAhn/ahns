@@ -26,6 +26,7 @@ const Contact = () => {
             console.log(error.text);
             alert('email not sent successfully' + error.text);
              });
+             e.target.reset();
     };
 
     return (
