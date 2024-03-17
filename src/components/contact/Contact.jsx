@@ -3,17 +3,30 @@ import React, {useRef} from "react";
 import "./contact.css";
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
     
     const form = useRef();
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_PUBLICKEY;
 
     const sendEmail = (e) => {
         e.preventDefault();
-        alert("Your message has been sent successfully");
-
-
-        emailjs.sendForm('service_7yvmdor', '', form.current, 'user_5z5z5z5')
-    }
+        
+        emailjs.sendForm(
+            serviceID, 
+            templateID, 
+            form.current, 
+            publicKey)
+        .then((result) => {
+            console.log(result.text);
+            alert('email sent successfully')
+        }, (error) => {
+            console.log(error.text);
+            alert('email not sent successfully' + error.text);
+             });
+    };
 
     return (
         <section className="contact container section" id="contact">
@@ -28,23 +41,23 @@ const Contact = () => {
                 </div>
             
 
-            <form action="" className="contact__form">
+            <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__form-group">
                     <div className="contact__form-div">
-                        <input type="text" className="contact__form-input" placeholder="Insert Your name"/>
+                        <input type="text" name='user_name' className="contact__form-input" placeholder="Insert Your name"  required/>
                     </div>
                     <div className="contact__form-div">
-                        <input type="email" className="contact__form-input" placeholder="Insert Your email"/>
+                        <input type="email" name='user_email' className="contact__form-input" placeholder="Insert Your email" required/>
                     </div>
                 </div>
                 
                 <div className="contact__form-div">
-                        <input type="text" className="contact__form-input" placeholder="Insert Your subject"/>
+                        <input type="text" name="subject" className="contact__form-input" placeholder="Insert Your subject" required/>
                     </div>
                     <div className="contact__form-div contact__form-area">
-                        <textarea name="" id="" cols="30" rows="10" className="contact__form-input" placeholder="write your message"/>
+                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="write your message" required/>
                     </div>
-                <button className="btn" ref={form} onClick={sendEmail}>Send Message</button>        
+                <button className="btn" type="submit">Send Message</button>        
             </form>
             </div>
             </section>
