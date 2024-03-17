@@ -4,19 +4,17 @@ import "./contact.css";
 import emailjs from '@emailjs/browser';
 
 
+
 const Contact = () => {
     
     const form = useRef();
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    const templateID = process.env.REACT_APP_TEMPLATE_ID;
-    const pk = process.env.REACT_APP_PUBLICKEY;
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
         
         emailjs
-        .sendForm(serviceID, templateID, form.current, {
-          publicKey: pk,
+        .sendForm(process.env.REACT_APP_EMAILSERVICE, process.env.REACT_APP_EMAILTEMPLATE, form.current, {
+          publicKey: process.env.REACT_APP_PUBLICKEY,
         })
         .then(
           () => {
@@ -46,18 +44,18 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__form-group">
                     <div className="contact__form-div">
-                        <input type="text" name='user_name' className="contact__form-input" placeholder="Insert Your name"  required/>
+                        <input type="text" name='user_name' className="contact__form-input" placeholder="Insert Your name" />
                     </div>
                     <div className="contact__form-div">
-                        <input type="email" name='user_email' className="contact__form-input" placeholder="Insert Your email" required/>
+                        <input type="email" name='user_email' className="contact__form-input" placeholder="Insert Your email" />
                     </div>
                 </div>
                 
                 <div className="contact__form-div">
-                        <input type="text" name="subject" className="contact__form-input" placeholder="Insert Your subject" required/>
+                        <input type="text" name="subject" className="contact__form-input" placeholder="Insert Your subject" />
                     </div>
                     <div className="contact__form-div contact__form-area">
-                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="write your message" required/>
+                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="write your message" />
                     </div>
                 <button className="btn" type="submit" value="Send">Send Message</button>        
             </form>
