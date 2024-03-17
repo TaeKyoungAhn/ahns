@@ -12,7 +12,7 @@ const Contact = () => {
         alert("Your message has been sent successfully");
 
 
-        emailjs.sendForm('service_7yvmdor', 'template_5z5z5z5', form.current, 'user_5z5z5z5')
+        emailjs.sendForm('service_7yvmdor', '', form.current, 'user_5z5z5z5')
     }
 
     return (
