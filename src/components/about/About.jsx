@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import image from "../../assets/avatar-2.svg";
+import image from "../../assets/Profile.svg";
 import AboutBox from "./AboutBox";
 
 const About = () => {
@@ -18,14 +18,14 @@ const About = () => {
                             I have a strong foundation in game development and a keen eye for detail. 
                             I am always looking for new opportunities to learn and grow as a developer.
                         </p>
-                        <a href="taekyoung.site" className="btn" target="__blank">Download</a>
+                        <a href="taekyoung.site" className="btn" target="__blank">Portfolio Download</a>
                     </div>
 
                     <div className="about__skills grid">
                         <div className="skills__data">
                             <div className="skills__titles">
                                 <h3 className="skills___name">Unity 3D</h3>
-                                <span className="skills__number">70%</span>
+                                <span className="skills__number">80%</span>
                             </div>
 
                             <div className="skills__bar">
@@ -46,7 +46,7 @@ const About = () => {
                         <div className="skills__data">
                             <div className="skills__titles">
                                 <h3 className="skills___name">Python</h3>
-                                <span className="skills__number">20%</span>
+                                <span className="skills__number">50%</span>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage python"></span>

@@ -7,7 +7,7 @@ const AboutBox = () => {
                 <i className="about__icon icon-fire"></i>
 
                 <div>
-                    <h3 className="about__title">198</h3>
+                    <h3 className="about__title">20</h3>
                     <span className="about__name">Project completed</span>
                 </div>
                 </div>

@@ -65,17 +65,17 @@
 }
 
 .unity{
-    width: 60%;
+    width: 80%;
     background-color: rgb(255,209,92);
 }
 
 .react{
-    width: 50%;
+    width: 60%;
     background-color: rgb(243, 39, 32);
 }
 
 .python{
-    width: 70%;
+    width: 50%;
     background-color: rgb(31, 230, 147);
 }
 
