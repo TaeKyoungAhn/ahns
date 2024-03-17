@@ -14,21 +14,22 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         
-        emailjs.sendForm(
-            serviceID, 
-            templateID, 
-            form.current,{
-            publicKey: pk})
-        .then((result) => {
-            console.log(result.text);
-            alert('email sent successfully')
-        }, (error) => {
-            console.log(error.text);
-            alert('email not sent successfully' + error.text);
-             });
-             e.target.reset();
+        emailjs
+        .sendForm(serviceID, templateID, form.current, {
+          publicKey: pk,
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            alert('Your message has been sent successfully!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            alert('Failed to send your message! Please try again later.');
+          },
+        );
     };
-
+  
     return (
         <section className="contact container section" id="contact">
             <h2 className="section__title">Contact.</h2>
@@ -58,7 +59,7 @@ const Contact = () => {
                     <div className="contact__form-div contact__form-area">
                         <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="write your message" required/>
                     </div>
-                <button className="btn" type="submit">Send Message</button>        
+                <button className="btn" type="submit" value="Send">Send Message</button>        
             </form>
             </div>
             </section>
