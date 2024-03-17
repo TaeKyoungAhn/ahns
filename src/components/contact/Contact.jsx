@@ -17,12 +17,14 @@ const Contact = () => {
 
     return (
         <section className="contact container section" id="contact">
-            <h2 className="section__title">Get In Touch</h2>
+            <h2 className="section__title">Contact.</h2>
 
             <div className="contact__container grid">
                 <div className="contact__info">
-                    <h3 className="contact__title">I'm Waiting for you</h3>
-                    <p className="contact__details">i like you.</p>
+                    <h3 className="contact__title">Personal Info.</h3>
+                    <p className="contact__details">Name   : 안 태 경</p>
+                    <p className="contact__details">E-mail : sg9956@naver.com</p>
+                    <p className="contact__details">Phone  : 010-5380-8283</p>
                 </div>
             
 
