@@ -14,11 +14,11 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            I am a Unity 3D Programmer with a passion for creating interactive experiences. 
-                            I have a strong foundation in game development and a keen eye for detail. 
-                            I am always looking for new opportunities to learn and grow as a developer.
+                        <b>창의적이고 효율적인 프로그램을 만든다는 것은 기본이 충실해야 가능하다고 생각합니다.</b><br/> 
+                        개발자가 컴퓨터 언어에 대한 이해와 소양을 갖추는 것이야 말로 모든 일의 시작이자 출발점이라 생각하여,<br/> 
+                        기본적인 지식을 갖추기 위해 <b>다양한 언어와 기반 지식에 대한 공부</b>를 멈추지 않습니다. 
                         </p>
-                        <a href="taekyoung.site" className="btn" target="__blank">Portfolio Download</a>
+                        <a href="https://taekserver.myasustor.com:10016/portal/apis/fileExplorer/share_link.cgi?link=sRom-y5WvoRywv_JmWUD-Q" className="btn" target="__blank">Portfolio Download</a>
                     </div>
 
                     <div className="about__skills grid">

@@ -31,6 +31,8 @@
     border-radius: var(--border-radius);
     position: relative;
     margin-bottom: 3rem;
+    white-space: pre-wrap;
+    text-align: left;
 }
 
 .skills__comment::before {
