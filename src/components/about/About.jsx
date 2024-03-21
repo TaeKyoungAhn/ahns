@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import image from "../../assets/Profile.svg";
-import AboutBox from "./AboutBox";
+// import AboutBox from "./AboutBox";
 
 const About = () => {
     return (
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
             </div>
 
-            <AboutBox/>
+            {/* <AboutBox/> */}
         </section>
     )
 }
