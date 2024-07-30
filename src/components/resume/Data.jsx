@@ -28,7 +28,7 @@ const Data = [
       id: 4,
       category: "experience",
       icon: "icon-briefcase",
-      year: "2022.02 - present",
+      year: "2022.02 - 2024.04",
       title: "(주)가온 그룹",
       desc: "매니저\n XR 콘텐츠 메인 개발자 ",
     },
