@@ -8,7 +8,7 @@ import Portfolio from './components/portfolio/Portfolio.jsx';
 import Blog from './components/blog/Blog.jsx';
 import Contact from './components/contact/Contact.jsx';
 import Skills from './components/skills/Skills.jsx';
-import BoxEx from './components/services/BoxEx.jsx';
+// import BoxEx from './components/services/BoxEx.jsx';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
     <main className='main'> 
       <Home/>
       <About/>
-      <BoxEx/>
+      {/* <BoxEx/> */}
       <Resume/>
       <Portfolio/>
       <Skills/>
